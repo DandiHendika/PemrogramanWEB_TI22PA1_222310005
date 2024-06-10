@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    header .profile-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+
+    header .title {
+        font-size: 1.2em;
+        margin: 10px 0 0;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .about,
+    .projects,
+    .contact {
+        background-color: white;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .projects .project-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .projects .project {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        flex: 1;
+        min-width: 200px;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/elden.png" alt="Profile Photo" class="profile-photo">
+            <h1>Dandi Hendika</h1>
+            <p class="title">Web and Mobile developer</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <p>
+                Hallo, nama saya Dandi Hendika saya adalah mahasiswa aktif di institut bisnis dan informatika kesatuan dengan jurusan teknologi informasi            </p>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <h2>Proyek</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Web developmet</h3>
+                    <p>CSS</p>
+                </div>
+                <div class="project">
+                    <h3>Mobile development</h3>
+                    <p>React Native</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Kontak</h2>
+            <p>Email: 222310005@student.ibik.ac.id</p>
+            <p>Telepon: +62 123 4567 890</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dandi Hendika. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
