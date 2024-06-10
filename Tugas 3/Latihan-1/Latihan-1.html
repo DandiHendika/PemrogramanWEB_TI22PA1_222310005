@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan-1</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: purple;
+        }
+
+        .container {
+            width: 30%;
+            padding: 20px;
+            border: 1px solid lightgray;
+            margin: 0 auto;
+            background-color: white;
+            margin-top: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        label {
+            width: 100px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 250px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: purple;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: lightslategray;
+            color: black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>FORM DATA DIRI MAHASISWA</h2>
+        <form id="form-mahasiswa">
+            <label for="nim">NPM :</label>
+            <input type="text" id="npm" name="npm" required placeholder="Masukan NPM"><br>
+
+            <label for="nama">Nama :</label>
+            <input type="text" id="nama" name="nama" required placeholder="Masukan Nama"><br>
+
+            <label for="jk">Jenis Kelamin:</label>
+            <select id="jk" name="jk" required>
+                <option value="">Pilih Jenis Kelamin</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select><br>
+
+            <label for="agama">Agama :</label>
+            <input type="text" id="agama" name="agama" required placeholder="Masukan Agama"><br>
+
+            <label for="status">Status : </label>
+            <select id="status" name="status" required>
+                <option value="">Pilih Status</option>
+                <option value="Mahasiswa Aktif">Mahasiswa Aktif</option>
+                <option value="Mahasiswa Cuti">Mahasiswa Cuti</option>
+                <option value="Mahasiswa Tidak">Mahasiswa Tidak Aktif</option>
+            </select><br>
+
+            <label for="jurusan">Jurusan :</label>
+            <select name="jurusan" id="jurusan" required>
+                <option value="">Pilih Jurusan</option>
+                <option value="S1 Teknologi Informasi">S1 Teknologi Informasi</option>
+                <option value="S1 Sistem Informasi">S1 Sistem Informasi</option>
+                <option value="S1 Pariwisata">S1 Pariwisata</option>
+                <option value="S1 Manajemen">S1 Manajemen</option>
+                <option value="S1 Akutansi">S1 Akutansi</option>
+                <option value="S1 Biokewirausahaan">S1 Biokewirausahaan</option>
+                <option value="Program Vokasi">Program Vokasi</option>
+            </select><br>
+
+            <label for="komentar">Komentar :</label>
+            <textarea id="komentar" name="komentar" placeholder="Ketik komentar"></textarea><br><br>
+
+            <button type="submit" id="submit-btn">Kirim</button>
+        </form>
+        <div id="output-container"></div>
+    </div>
+    <script src="Latihan-1.js"></script>
+</body>
+
+</html>

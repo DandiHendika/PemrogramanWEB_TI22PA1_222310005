@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan-2</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+        }
+
+        .container {
+            width: 30%;
+            padding: 20px;
+            border: 1px solid lightgray;
+            margin: 0 auto;
+            background-color: white;
+            margin-top: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        label {
+            width: 100px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 250px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: lightpink;
+            color: black;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>TRAVEL IBIK ABADI</h2>
+        <table border="1" cellspacing="0" cellpadding="7px">
+            <tr>
+                <th></th>
+                <th>Eksekutif</th>
+                <th>Bisnis</th>
+                <th>Ekonomi</th>
+            </tr>
+            <tr>
+                <td>Jakarta</td>
+                <td>70000</td>
+                <td>40000</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>Solo</td>
+                <td>80000</td>
+                <td>50000</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>Surabaya</td>
+                <td>90000</td>
+                <td>60000</td>
+                <td>30000</td>
+            </tr>
+        </table>
+        <p>Diskon 10% diberikan apabila pemesan tiket merupakan anggota Travel Bintang Abadi.</p><br>
+
+        <h3>Form Pemesanan Tiket</h3>
+        <form id="form-pemesanan">
+            <label for="nama">Nama :</label>
+            <input type="text" id="nama" name="nama" required placeholder="Masukkan Nama"><br>
+
+            <label for="tujuan">Tujuan :</label>
+            <select id="tujuan" name="tujuan" required>
+                <option value="">Pilih Tujuan</option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Solo">Solo</option>
+                <option value="Surabaya">Surabaya</option>
+            </select><br>
+
+            <label for="kelas">Kelas :</label>
+            <select id="kelas" name="kelas" required>
+                <option value="">Pilih Kelas</option>
+                <option value="Eksekutif">Eksekutif</option>
+                <option value="Bisnis">Bisnis</option>
+                <option value="Ekonomi">Ekonomi</option>
+            </select><br>
+
+            <label for="banyak_tiket">Banyak Tiket :</label>
+            <input type="number" id="banyak_tiket" name="banyak_tiket" required min="1" placeholder="Masukkan Jumlah"><br>
+
+            <label for="status">Status :</label>
+            <select id="status" name="status" required>
+                <option value="">Pilih Status</option>
+                <option value="Member">Member</option>
+                <option value="Non-Member">Reguler</option>
+            </select><br>
+            <button type="button" id="kirim-btn">Kirim</button>
+        </form>
+        <div id="output-container"></div>
+    </div>
+    <script src="Latihan-2.js"></script>
+</body>
+
+</html>
